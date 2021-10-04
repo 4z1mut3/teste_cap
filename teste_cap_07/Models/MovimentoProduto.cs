@@ -14,5 +14,13 @@ namespace teste_cap_07.Models
         public int quantidadeProduto { get; set; }
         
         public decimal valorUnitario { get; set; }
+
+        public MovimentoProduto(string dataEntrega, string nomeProduto, int quantidadeProduto, decimal valorUnitario)
+        {
+            this.dataEntrega = dataEntrega;
+            this.nomeProduto = nomeProduto;
+            this.quantidadeProduto = quantidadeProduto;
+            this.valorUnitario = valorUnitario;
+        }
     }
 }
